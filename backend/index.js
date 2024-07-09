@@ -3,12 +3,27 @@ import {PORT,mongoDBURL} from './config.js'; //3
 import mongoose from 'mongoose';  //5
 import {Book} from './models/bookModel.js'; //6
 import booksRoutes from './routes/booksRoutes.js'; //13
+import cors from 'cors'; //16
 
 const app = express(); //2
 
 
 //Middleware for parsing json data
 app.use(express.json()); //7.2
+
+//Middleware for cors
+
+//app.use(cors()); //16.2
+
+app.use(
+    cors({
+        origin:'http://localhost:3000',
+        methods:['GET','POST','PUT','DELETE'],
+        allowedHeaders:['Content-Type'],
+    })
+);
+
+
 
 
 app.get('/',(request,response)=>{   //4
