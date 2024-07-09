@@ -1,9 +1,14 @@
-server connected 
- port created 
-  -->port in config.js
+ 1.server connected 
+ 2.port created 
+  --port in config.js
 
-database created
+ 3.database created
 
-crated modeles
+ 4.crated modeles
+  --bookModel.js
 
-Crud opa
+ 5.Crud oparation done
+
+ 6.Routes
+ --booksRoutes.js
+   (Add all crud items to this file and remove app. and replace by'router.' )
