@@ -11,17 +11,18 @@ const app = express(); //2
 //Middleware for parsing json data
 app.use(express.json()); //7.2
 
+
 //Middleware for cors
 
-//app.use(cors()); //16.2
+app.use(cors()); //16.2
 
-app.use(
-    cors({
-        origin:'http://localhost:3000',
-        methods:['GET','POST','PUT','DELETE'],
-        allowedHeaders:['Content-Type'],
-    })
-);
+//app.use(
+   // cors({
+   //     origin:'http://localhost:3000',
+  //      methods:['GET','POST','PUT','DELETE'],
+  //      allowedHeaders:['Content-Type'],
+ //   })
+  //);
 
 
 
