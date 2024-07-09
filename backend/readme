@@ -12,3 +12,9 @@
  6.Routes
  --booksRoutes.js
    (Add all crud items to this file and remove app. and replace by'router.' )
+
+
+
+   npm i express nodemon
+npm i mongoose
+npm i cors
