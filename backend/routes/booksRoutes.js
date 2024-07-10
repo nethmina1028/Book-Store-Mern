@@ -132,7 +132,7 @@ import {Book} from '../models/bookModel.js';
    
     try{
       const { id } =request.params;
-      const result = await Book.findByIdAndUpdate(id);
+      const result = await Book.findByIdAndDelete(id);
 
       if(!result){
         return response.status(404).json({message: 'Book not found'});
