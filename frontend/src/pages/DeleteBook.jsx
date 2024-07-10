@@ -9,8 +9,8 @@ const DeleteBook = ()=> {
   const [loading,setLoading] = useState(false);
   const navigate = useNavigate();
   const {id} = useParams();
-  const handleDeleteBook = () =>{
 
+  const handleDeleteBook = () =>{
     setLoading(true);
     axios
        .delete(`http://localhost:5555/books/${id}`)
