@@ -62,7 +62,7 @@ const CreateBook =() =>{
         </div>
 
         <div className='my-4'>
-              <label className='mr-4 text-xl text-gray-500 '>Publish yea</label>
+              <label className='mr-4 text-xl text-gray-500 '>Publish Year</label>
 
               <input
               type='text'
